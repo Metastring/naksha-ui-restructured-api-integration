@@ -71,6 +71,15 @@ export default function useLayerManager() {
     e?.features?.forEach(featureRaw => {
       const feat = featureRaw.toJSON();
 
+      // send back feature properties if a district or a state has been clicked
+      // console.log("feat.layer.id:",feat.layer.id);
+      if(feat.layer.id.endsWith("DISTRICT") || feat.layer.id.endsWith("STATE")) {
+        // if geoserver has onClick event defined then call it
+        if (geoserver?.onClick) {
+          geoserver?.onClick(feat.properties);
+        }
+      }
+
       if (feat.layer.id.startsWith(LAYER_PREFIX)) {
         const featureId = feat.properties[FEATURE_PROP];
 

@@ -110,7 +110,7 @@ export default function Map({ externalLayers }: { externalLayers? }) {
           Type: selectedProp["entity.type"]
         };
         if (selectedProp["entity.type"] === "DISTRICT")
-          popUpProps['State'] = selectedProp["entity.state"];
+          popUpProps['State'] = selectedProp["entity.State"];
         setPopUp({
           coordinates: e.lngLat,
           title: colorBy,

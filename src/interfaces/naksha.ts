@@ -50,6 +50,7 @@ export interface NakshaProps {
     endpoint: string;
     store: string;
     workspace: string;
+    onClick?: any;
   };
 
   selectedLayers?: SelectedLayers[];

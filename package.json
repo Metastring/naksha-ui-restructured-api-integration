@@ -4,9 +4,9 @@
   "main": "dist/index.js",
   "module": "dist/naksha.esm.js",
   "typings": "dist/index.d.ts",
-  "author": "Harsh Zalavadiya <harsh@foobars.in> (twitter: @zhnebula), Pradeep Thoma",
+  "author": "answerquest <https://github.com/answerquest>",
   "license": "Apache-2.0",
-  "repository": "git@github.com:deepkt/naksha-ui-restructured-api-integration.git",
+  "repository": "git@github.com:answerquest/naksha-ui-restructured-api-integration.git",
   "files": [
     "dist"
   ],
